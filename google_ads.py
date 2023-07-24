@@ -180,7 +180,7 @@ def update_campaign(campaign_id):
 
     # Retrieve a FieldMask for the fields configured in the campaign.
     field = protobuf_helpers.field_mask(None,campaign._pb)
-    print(field)
+    print("field.......",field)
     googleads_client.copy_from(
         campaign_operation.update_mask,
         protobuf_helpers.field_mask(None, campaign._pb),
